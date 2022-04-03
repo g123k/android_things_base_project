@@ -3,11 +3,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-  compileSdkVersion 28
+  compileSdkVersion 31
   defaultConfig {
-    applicationId "com.raywenderlich.knockknock"
+    applicationId "com.g123k.androidthings"
     minSdkVersion 27
-    targetSdkVersion 28
+    targetSdkVersion 31
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,20 +27,15 @@ dependencies {
   implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
   implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
 
-  compileOnly 'com.google.android.things:androidthings:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-apa102:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-button:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-bmx280:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-ht16k33:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-pwmservo:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-pwmspeaker:' + project.ext.androidThingsVersion
-  implementation 'com.google.android.things.contrib:driver-rainbowhat:' + project.ext.androidThingsVersion
+  compileOnly 'com.google.android.things:androidthings:1.0'
+  implementation 'com.google.android.things.contrib:driver-apa102:1.0'
+  implementation 'com.google.android.things.contrib:driver-button:1.0'
+  implementation 'com.google.android.things.contrib:driver-bmx280:1.0'
+  implementation 'com.google.android.things.contrib:driver-ht16k33:1.0'
+  implementation 'com.google.android.things.contrib:driver-pwmservo:1.0'
+  implementation 'com.google.android.things.contrib:driver-pwmspeaker:1.0'
+  implementation 'com.google.android.things.contrib:driver-rainbowhat:1.0'
 
-
-
-
-  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-  implementation 'android.arch.lifecycle:extensions:' + project.ext.lifecycleVersion
-
-
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"
+  implementation 'android.arch.lifecycle:extensions:1.1.1'
 }
